@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8/>
+  <title>Portal Calculator </title>
+  <style type="text/css">
+    body {
+        margin: 0;
+      text-align: center;
+      background-image: linear-gradient(rgb(113, 230, 113), rgb(207, 239, 102));
+      height: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      
+
+    }
+    html {
+    height: 97%;
+    }
+  </style>
+</head>
+<body>
+ 
+    <h1>OVERWORLD -> NETHER</h1>
+<form>
+  <div>X:</div>
+  <div><input type="number" id="num1"/></div>
+  <div><input type="button" value="Oblicz" onclick="sumNumbers()"/></div>
+  <div>Wynik: <span id="result"></span></div>
+</form>
+ 
+<script>
+  function sumNumbers() {
+    let num1 = document.getElementById('num1').value;
+    let sum = Number(num1) / parseInt("8");
+    document.getElementById('result').innerHTML = sum;
+  }
+</script>
+<br><br><br>
+<form>
+    <div>Z:</div>
+    <div><input type="number" id="num2"/></div>
+    <div><input type="button" value="Oblicz" onclick="sumNumbers1()"/></div>
+    <div>Wynik: <span id="result1"></span></div>
+  </form>
+   
+  <script>
+    function sumNumbers1() {
+      let num1 = document.getElementById('num2').value;
+      let sum = Number(num1) / parseInt("8");
+      document.getElementById('result1').innerHTML = sum;
+    }
+  </script>
+  <hr size="6" color="red" width="500px">
+
+  <h1>NETHER -> OVERWORLD</h1>
+  <form>
+    <div>X:</div>
+    <div><input type="number" id="num3"/></div>
+    <div><input type="button" value="Oblicz" onclick="sumNumbers3()"/></div>
+    <div>Wynik: <span id="result3"></span></div>
+  </form>
+   
+  <script>
+    function sumNumbers3() {
+      let num1 = document.getElementById('num3').value;
+      let sum = Number(num1) * parseInt("8");
+      document.getElementById('result3').innerHTML = sum;
+    }
+  </script>
+  <br><br><br>
+  <form>
+    <div>
+        
+        Z:</div>
+    <div><input type="number" id="num6"/></div>
+    <div><input type="button" value="Oblicz" onclick="sumNumbers6()"/></div>
+    <div>Wynik: <span id="result6"></span></div>
+  </form>
+   
+  <script>
+    function sumNumbers6() {
+      let num1 = document.getElementById('num6').value;
+      let sum = Number(num1) * parseInt("8");
+      document.getElementById('result6').innerHTML = sum;
+    }
+  </script>
+  <hr size="6" color="red" width="500px">
+  <br><br><br>
+  <img src="https://media.tenor.com/1iSARWJr-TEAAAAC/among-us-twerk.gif" size="10%">
+  
+  
+ 
+</body>
+</html>
